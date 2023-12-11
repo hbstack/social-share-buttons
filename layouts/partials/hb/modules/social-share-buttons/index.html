@@ -1,0 +1,8 @@
+{{- $ctx := . }}
+{{- $params := .params }}
+{{- $alignment := default "start" $params.alignment | printf "justify-content-%s" }}
+{{- with $params.media }}
+  <div class="hb-social-share-buttons d-flex align-items-center gap-2 {{ $alignment }}">
+    {{ partial "hb/modules/social-share-buttons/buttons" $ctx }}
+  </div>
+{{- end }}

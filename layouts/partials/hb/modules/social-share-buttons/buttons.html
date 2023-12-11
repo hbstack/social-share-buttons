@@ -1,0 +1,35 @@
+{{- $page := .page }}
+{{- $params := .params }}
+{{- $icons := default true $params.icons }}
+{{- $labels := default true $params.labels }}
+{{- $size := default "1.25em" $params.size }}
+{{- $media := partial "hb/modules/social-share-buttons/functions/media" . }}
+{{- range default slice $params.media }}
+  {{- $name := . }}
+  {{- $label := default (title $name) (printf "social_share_button_%s" $name | i18n) }}
+  {{- with index $media $name }}
+    {{- $url := replace .url "{url}" (urlquery $page.Permalink) 1 }}
+    {{- $url = replace $url "{text}" (urlquery $page.Title) 1 }}
+    <a
+      class="hb-social-share-button hb-social-share-button-{{ $name }} text-decoration-none d-flex align-items-center"
+      target="_blank"
+      title="{{ $label }}"
+      href="{{ $url }}">
+      {{- if $icons }}
+        {{- partial "icons/icon" (dict
+          "vendor" "simple"
+          "name" (default $name .icon)
+          "width" $size
+          "height" $size
+          "color" (default "" .iconColor)
+          "className" (cond $labels "hb-social-share-button-icon me-1" "hb-social-share-button-icon"))
+        }}
+      {{- end }}
+      {{- if $labels }}
+        <span class="hb-social-share-button-label">{{- $label -}}</span>
+      {{- end }}
+    </a>
+  {{- else }}
+    {{- warnf "[social-share-buttons] unsupported media: %s" . }}
+  {{- end }}
+{{- end }}
