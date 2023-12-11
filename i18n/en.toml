@@ -1,0 +1,11 @@
+[social_share_button_facebook]
+other = "Facebook"
+
+[social_share_button_linkedin]
+other = "LinkedIn"
+
+[social_share_button_sinaweibo]
+other = "Sina Weibo"
+
+[social_share_button_twitter]
+other = "Twitter"

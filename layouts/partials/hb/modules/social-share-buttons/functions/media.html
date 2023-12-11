@@ -1,0 +1,20 @@
+{{- $media := dict
+  "facebook" (dict
+    "url" "https://www.facebook.com/sharer/sharer.php?u=#{url}"
+    "iconColor" "#0866FF"
+  )
+  "linkedin" (dict
+    "url" "https://www.linkedin.com/sharing/share-offsite/?url={url}"
+    "iconColor" "#0A66C2"
+  )
+  "twitter" (dict
+    "url" "https://twitter.com/intent/tweet?url={url}&text={text}"
+    "icon" "x"
+    "iconColor" "#000000"
+  )
+  "sinaweibo" (dict
+    "url" "https://service.weibo.com/share/share.php?url={url}&title={text}"
+    "iconColor" "#E6162D"
+  )
+}}
+{{- return $media }}

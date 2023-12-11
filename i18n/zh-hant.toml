@@ -1,0 +1,11 @@
+[social_share_button_facebook]
+other = "臉書"
+
+[social_share_button_linkedin]
+other = "領英"
+
+[social_share_button_sinaweibo]
+other = "微博"
+
+[social_share_button_twitter]
+other = "推特"
