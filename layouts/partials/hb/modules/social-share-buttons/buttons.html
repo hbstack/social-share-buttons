@@ -3,7 +3,7 @@
 {{- $icons := default true $params.icons }}
 {{- $labels := default true $params.labels }}
 {{- $size := default "1.25em" $params.size }}
-{{- $media := partial "hb/modules/social-share-buttons/functions/media" . }}
+{{- $media := partialCached "hb/modules/social-share-buttons/functions/media" . }}
 {{- range default slice $params.media }}
   {{- $name := . }}
   {{- $label := default (title $name) (printf "social_share_button_%s" $name | i18n) }}
@@ -16,14 +16,15 @@
       title="{{ $label }}"
       href="{{ $url }}">
       {{- if $icons }}
-        {{- partial "icons/icon" (dict
+        {{- $icon := dict
           "vendor" "simple"
           "name" (default $name .icon)
           "width" $size
           "height" $size
           "color" (default "" .iconColor)
-          "className" (cond $labels "hb-social-share-button-icon me-1" "hb-social-share-button-icon"))
+          "className" (cond $labels "hb-social-share-button-icon me-1" "hb-social-share-button-icon")
         }}
+        {{- partialCached "icons/icon" $icon $icon }}
       {{- end }}
       {{- if $labels }}
         <span class="hb-social-share-button-label">{{- $label -}}</span>
