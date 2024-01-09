@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/hbstack/social-share-buttons/compare/v0.1.2...v0.1.3) (2024-01-09)
+
+
+### Performance Improvements ⚡️
+
+* cache partials to improve build performance ([#11](https://github.com/hbstack/social-share-buttons/issues/11)) ([4226c71](https://github.com/hbstack/social-share-buttons/commit/4226c7175ef42329143a99e008e73c9457036d99))
+
 ## [0.1.2](https://github.com/hbstack/social-share-buttons/compare/v0.1.1...v0.1.2) (2023-12-22)
 
 
