@@ -1,4 +1,9 @@
 {{- $media := dict
+  "email" (dict
+    "url" "mailto:?subject={subject}&body={text} {url}"
+    "icon" "envelope"
+    "iconVendor" "bs"
+  )
   "facebook" (dict
     "url" "https://www.facebook.com/sharer/sharer.php?u={url}"
     "iconColor" "#0866FF"
@@ -7,14 +12,26 @@
     "url" "https://www.linkedin.com/sharing/share-offsite/?url={url}"
     "iconColor" "#0A66C2"
   )
+  "reddit" (dict
+    "url" "https://www.reddit.com/submit?title={text}&url={url}"
+    "iconColor" "#FF4500"
+  )
+  "sinaweibo" (dict
+    "url" "https://service.weibo.com/share/share.php?url={url}&title={text}"
+    "iconColor" "#E6162D"
+  )
+  "telegram" (dict
+    "url" "https://t.me/share/url?url={url}&text={text}"
+    "iconColor" "#26A5E4"
+  )
   "twitter" (dict
     "url" "https://twitter.com/intent/tweet?url={url}&text={text}"
     "icon" "x"
     "iconColor" "#000000"
   )
-  "sinaweibo" (dict
-    "url" "https://service.weibo.com/share/share.php?url={url}&title={text}"
-    "iconColor" "#E6162D"
+  "whatsapp" (dict
+    "url" "https://wa.me/?text={url} {title}"
+    "iconColor" "#25D366"
   )
 }}
 {{- return $media }}
