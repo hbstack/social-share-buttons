@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/hbstack/social-share-buttons/compare/v0.1.3...v0.2.0) (2024-03-14)
+
+
+### Features ✨
+
+* add support for email, Reddit, Telegram and WhatsApp ([#25](https://github.com/hbstack/social-share-buttons/issues/25)) ([844db8e](https://github.com/hbstack/social-share-buttons/commit/844db8ee98bac14f9cd023b7efcf145e04e33795)), closes [#24](https://github.com/hbstack/social-share-buttons/issues/24)
+
 ## [0.1.3](https://github.com/hbstack/social-share-buttons/compare/v0.1.2...v0.1.3) (2024-01-09)
 
 
