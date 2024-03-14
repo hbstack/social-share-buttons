@@ -3,6 +3,7 @@
 {{- $icons := default true $params.icons }}
 {{- $labels := default true $params.labels }}
 {{- $size := default "1.25em" $params.size }}
+{{- $subject := i18n "social_share_subject" }}
 {{- $media := partialCached "hb/modules/social-share-buttons/functions/media" . }}
 {{- range default slice $params.media }}
   {{- $name := . }}
@@ -10,6 +11,8 @@
   {{- with index $media $name }}
     {{- $url := replace .url "{url}" (urlquery $page.Permalink) 1 }}
     {{- $url = replace $url "{text}" (urlquery $page.Title) 1 }}
+    {{- $url = replace $url "{title}" $page.Title 1 }}
+    {{- $url = replace $url "{subject}" $subject 1 }}
     <a
       class="hb-social-share-button hb-social-share-button-{{ $name }} text-decoration-none d-flex align-items-center"
       target="_blank"
@@ -17,7 +20,7 @@
       href="{{ $url }}">
       {{- if $icons }}
         {{- $icon := dict
-          "vendor" "simple"
+          "vendor" (default "simple" .iconVendor)
           "name" (default $name .icon)
           "width" $size
           "height" $size

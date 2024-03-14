@@ -1,11 +1,26 @@
+[social_share_button_email]
+other = "邮件"
+
 [social_share_button_facebook]
 other = "脸书"
 
 [social_share_button_linkedin]
 other = "领英"
 
+[social_share_button_reddit]
+other = "Reddit"
+
 [social_share_button_sinaweibo]
 other = "微博"
 
+[social_share_button_telegram]
+other = "Telegram"
+
 [social_share_button_twitter]
 other = "推特"
+
+[social_share_button_whatsapp]
+other = "WhatsApp"
+
+[social_share_subject]
+other = "我想和你分享一个链接"
