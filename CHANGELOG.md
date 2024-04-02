@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/social-share-buttons/compare/v0.2.1...v0.2.2) (2024-04-02)
+
+
+### Styles 🎨
+
+* show simple animation on hover ([5f091ed](https://github.com/hbstack/social-share-buttons/commit/5f091ed9a11197a1389172e26d01d5b7460ab46a))
+
 ## [0.2.1](https://github.com/hbstack/social-share-buttons/compare/v0.2.0...v0.2.1) (2024-04-02)
 
 
