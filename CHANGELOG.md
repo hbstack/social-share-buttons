@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/hbstack/social-share-buttons/compare/v0.2.0...v0.2.1) (2024-04-02)
+
+
+### Styles 🎨
+
+* remove Twitter icon color ([a7b86f9](https://github.com/hbstack/social-share-buttons/commit/a7b86f9c9009716bff4498b5ab6c045bccedb36c))
+
 ## [0.2.0](https://github.com/hbstack/social-share-buttons/compare/v0.1.3...v0.2.0) (2024-03-14)
 
 
