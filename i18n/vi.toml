@@ -1,0 +1,26 @@
+[social_share_button_email]
+other = "Email"
+
+[social_share_button_facebook]
+other = "Facebook"
+
+[social_share_button_linkedin]
+other = "LinkedIn"
+
+[social_share_button_reddit]
+other = "Reddit"
+
+[social_share_button_sinaweibo]
+other = "Sina Weibo"
+
+[social_share_button_telegram]
+other = "Telegram"
+
+[social_share_button_twitter]
+other = "Twitter"
+
+[social_share_button_whatsapp]
+other = "WhatsApp"
+
+[social_share_subject]
+other = "I'd like to share a link with you"
