@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/social-share-buttons/compare/v0.2.2...v0.3.0) (2024-05-28)
+
+
+### Features ✨
+
+* **i18n:** add Vietnamese translations ([22bc092](https://github.com/hbstack/social-share-buttons/commit/22bc0929370a7b4c2e489ee58a49bf169e523519))
+
 ## [0.2.2](https://github.com/hbstack/social-share-buttons/compare/v0.2.1...v0.2.2) (2024-04-02)
 
 
