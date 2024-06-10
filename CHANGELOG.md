@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/social-share-buttons/compare/v0.3.0...v0.4.0) (2024-06-10)
+
+
+### Features ✨
+
+* add support for X ([#44](https://github.com/hbstack/social-share-buttons/issues/44)) ([0faf8e6](https://github.com/hbstack/social-share-buttons/commit/0faf8e6080e8781a7e50cf996d3518920f273a6f))
+
 ## [0.3.0](https://github.com/hbstack/social-share-buttons/compare/v0.2.2...v0.3.0) (2024-05-28)
 
 
