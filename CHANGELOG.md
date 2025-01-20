@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/social-share-buttons/compare/v0.4.0...v0.5.0) (2025-01-20)
+
+
+### Features ✨
+
+* **i18n:** create ms.toml ([#77](https://github.com/hbstack/social-share-buttons/issues/77)) ([9aa49d8](https://github.com/hbstack/social-share-buttons/commit/9aa49d83ac2917d6dece1778ef87ee129c8dad12))
+
 ## [0.4.0](https://github.com/hbstack/social-share-buttons/compare/v0.3.0...v0.4.0) (2024-06-10)
 
 
