@@ -1,4 +1,8 @@
 {{- $media := dict
+  "bluesky" (dict
+    "url" "https://bsky.app/intent/compose?text={text} {url}"
+    "iconColor" "#0285FF"
+  )
   "email" (dict
     "url" "mailto:?subject={subject}&body={text} {url}"
     "icon" "envelope"
