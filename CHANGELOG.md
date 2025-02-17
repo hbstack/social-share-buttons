@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/hbstack/social-share-buttons/compare/v0.5.0...v0.6.0) (2025-02-17)
+
+
+### Features ✨
+
+* add support for Bluesky ([#84](https://github.com/hbstack/social-share-buttons/issues/84)) ([53b0930](https://github.com/hbstack/social-share-buttons/commit/53b0930fb5b88c0b8eff5efb078c235db07512de)), closes [#85](https://github.com/hbstack/social-share-buttons/issues/85)
+
 ## [0.5.0](https://github.com/hbstack/social-share-buttons/compare/v0.4.0...v0.5.0) (2025-01-20)
 
 
